@@ -8,3 +8,4 @@ https://www.pexels.com
 #extras
 reducir el peso de las imagines bg
 generar un favicon partiendo de logo 1 2 o 3
+![Screenshot](maqueta1.png)
