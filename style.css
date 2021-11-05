@@ -1,0 +1,129 @@
+*{ /*ESTILO GLOBAL DEL NAVEGADOR*/
+    box-sizing: border-box; /*DEFINE UN SOLO ESPACIADO*/
+    margin:0;               /*SIN MARGENES HACIA AFUERA*/
+    padding:0;              /*SIN ESPACIADO HACIA ADENTRO*/
+}
+
+body{/*ESTILO DE BODY Y LO QUE CONTIENE DENTRO*/
+    background:black ;  /*COLOR DE FONDO*/
+    color: aliceblue;   /*COLOR DEL TEXTO*/    
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23302d2d' fill-opacity='0.47' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-size: 14px; /*TAMAÑO DE LA LETRA*/
+    /*font-family: 'K2D', sans-serif;   /*ORIGEN DE LA FUENTE K2D*/ 
+    font-family: 'Exo', sans-serif;     /*ORIGEN DE LA FUENTE Exo*/
+}
+a{/*ESTILO DE ETIQUETAS "a" APLICA PARA TODAS DENTRO DEL HTML*/
+    color: white;       /*COLOR DEL TEXO*/
+    text-decoration: none;/*SUPRIME EL SUBRAYADO EN ELEMENTOS ENLACE*/
+
+}
+
+ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
+    list-style: none; /*SUPRIME ESTILOS POR DEFECTO QUE PODRIA TENER*/
+}
+
+.container{ /*ESTILO PARA LA CLASE DEL CONTENEDOR DONDE SE ALOJA TODO EL CONTENIDO DEL SITIO*/
+    width: 90%;
+    margin: auto;
+}
+
+/*ESTILOS DE NAVEGACION*/
+
+.nav-main{/*ESTILO PARA LA CLASE DEL MENU*/
+    font-size: 20px /*TAMAÑO DE LA FUENTE DEL MENU*/;
+    display: flex;  /*PERMITE ALINEAR LOS ELEMENTOS EN 1 SOLA FILA*/
+    justify-content: space-between; /*LOS ELEMENTOS UTILIZARAN TODO EL ANCHO DISPONIBLE DEL CONTENEDOR ANCHO/n_ELEMENTOS*/
+    align-items: center;            /*ALINEACION CENTRADA DE LOS ELEMENTOS*/
+    height: 60px;   /*ALTURA POR DEFECTO DE LA NAVEGACION*/
+    padding: 20px 0 ;               /*ESPACIO DE RELLENO ARRIBA Y ABAJO 20PX A LOS LADOS 0*/
+    
+}
+.nav-brand{
+    width: 300px;
+}
+
+/*NAVEGACION IZQUIERDA*/
+.nav-main ul{   /*ESTILO PARA LAS ETIQUETTAS ul QUE SE ENCUENTRAN DENTRO DEL nav-main UNICAMENTE*/
+    display: flex;
+}
+
+.nav-main ul li{ /*ESTILO PARA CADA ELEMENTO li DENTRO DE LA ETIQUETA ul PERTENECIENTE A nav-main*/
+    padding: 10px; /*ESPACIO DE RELLENO ARRIBA Y ABAJO 20PX A LOS LADOS 0*/
+}
+
+.nav-main ul li a:hover{/*ESTILO PARA LAS ETIQUETAS A CONTENIDAS EN nav-main | hover PROPIEDADES PARA CUANDO SE INTERACTUA CON EL ELEMENTO*/
+    border-bottom: 2px solid white;
+}
+.nav-main ul li a{/*ESPACIO ENTRE LAS ETIQUETAS a Y EL ELEMENTO border-botton*/
+    padding: 2px;
+}
+
+.nav-main ul.nav-menu{
+    flex:1;
+    margin-left: 20px;
+}
+
+/*SHOWCASE*/
+.showcase{/*ESTILO PARA LA CLASE SHOWCASE Y SUS ELEMENTOS CONTENIDOS*/
+    width: 100%;                            /*USA EL ANCHO DISPONIBLE PARA ESTE CASO EL 90% DEL CONTENEDOR DEFINIDO PREVIAMENTE EN LA CLASE container*/
+    background: url(/img/fachada_taller.png) no-repeat center center/cover; /*FIMAGEN DE FONDO NO UNA IMAGEN INSERTADA EN EL HTML PARA ESTE ELEMENTO*/
+    height: 550px;                                                          /*ALTURA DEL HEADER*/
+    padding-bottom: 50px;                       /*ESPACIADO ENTRE ELEMENTOS QUE ESTARAN ABAJO*/
+    margin-bottom: 20;
+    display:flex;                               /*CENTRADO DEL TEXTO*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 15px 0 0;                           /*MARGEN ENTRE LOS ELEMENTOS SUPERIORES, EN ESTE CASO LA ETIQUETA <hr> SUPERIOR  */
+    margin-bottom: 20px;                        /*MARGEN ENTRE LOS ELEMENTOS INFERIORES, EN ESTE CASO LA CUADRICULA newcards  */
+}
+
+.btn{/*ESTILO PARA LA CLASE BTN HACIENDO REFERENCIA A LOS BOTONES*/
+    cursor: pointer;            /*AL COLOCARSE EL CURSOR SOBRE EL BOTON CAMBIA EL PUNTERO*/
+    display: inline-block;      
+    font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
+    padding: 10px 20px;         /*ESPACIO ENRE ELEMENTOS 10 PX ARRIBA Y ABAJO 20PX IZQUIERDA Y DERECHA*/
+    background: #000000;       /*COLOR DE FONDO*/
+    color: #ffff;               /*COLOR DEL TEXTO*/
+    border: 1px solid #ffff ;   /*PARAMETROS DEL BORDE*/
+    margin: 10px 0;             /*MARGEN ENTRE ELEMENTOS 10 PX ARRIBA Y ABAJO 0PX IZQ Y DER*/
+    opacity: .3;                /*OPACIDAD PARA QUE AL USAR HOVER SE VUELVA SOLOR SOLIDO EL BACKGROUND*/
+}
+.btn:hover{
+    opacity: 1;
+}
+
+.showcase h2,
+.showcase p{
+margin-bottom: 10px;
+font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
+}
+
+/*NEWS CARDS ESTILO PARA LAS 4 IMAGNES*/
+.news-cards{
+    display: grid; /* cuadricula grid CSS*/
+    grid-template-columns: repeat(4,1fr); /*PERMITE GENERAR COLUMNAS*/
+    gap: 25px;/*ESPACIO ENRE CADA COLUMNA*/
+    margin: 10px;
+}
+.news-cards img{
+    width: 100%; /*ANCHURA DEL 100% DE LA IMAGEN*/
+    height: 300px; /*ALTURA DE CADA IMAGEN EN PIXELES*/
+}
+.news-cards h3{
+    font-size: 20px;
+    margin:10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}.news-cards a {
+    padding: 10px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-cards a:hover{
+    text-decoration: underline;
+}
