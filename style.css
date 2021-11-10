@@ -77,7 +77,7 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
 .showcase{/*ESTILO PARA LA CLASE SHOWCASE Y SUS ELEMENTOS CONTENIDOS*/
     width: 100%;                            /*USA EL ANCHO DISPONIBLE PARA ESTE CASO EL 90% DEL CONTENEDOR DEFINIDO PREVIAMENTE EN LA CLASE container*/
     background: url(/img/logo_bg.png) no-repeat center center/cover; /*FIMAGEN DE FONDO NO UNA IMAGEN INSERTADA EN EL HTML PARA ESTE ELEMENTO*/
-    height: 550px;                              /*ALTURA DEL HEADER*/
+    height: 900px;                              /*ALTURA DEL HEADER*/
     padding: 50px;                       /*ESPACIADO ENTRE ELEMENTOS QUE ESTARAN ABAJO*/
     margin-bottom: 20;
     display:flex;                               /*CENTRADO DEL TEXTO*/
@@ -118,7 +118,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
 }
 .news-cards img{
     width: 100%; /*ANCHURA DEL 100% DE LA IMAGEN*/
-    height: 150px; /*ALTURA DE CADA IMAGEN EN PIXELES*/
+    height: 230px; /*ALTURA DE CADA IMAGEN EN PIXELES*/
 }
 .news-cards h3{
     font-size: 20px;
@@ -219,6 +219,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
 } 
 .footer-container a:hover{
     text-decoration: underline;
+    color: #ffffff;
 }
 
 .footer{
@@ -265,6 +266,10 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
     .cards-banner-two .content{
          width: 80%;
     }
+    .news-cards img{
+        height: 250px;
+        width: 100%;
+    }
 }
 @media(max-width:500px){
 
@@ -276,7 +281,8 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
     }
 
     .news-cards img{
-        height: 250;
+        height: 250px;
+        width: 100%;
     }
 
     .cards-banner-one .content,
