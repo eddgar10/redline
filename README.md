@@ -11,4 +11,5 @@ reestructura de pagina web redline mexico usando su contenido y combinando con i
 ## extras
 reducir el peso de las imagines bg
 generar un favicon partiendo de logo 1 2 o 3
+integrar googlesheets para crear catalogo en whatsapp https://www.youtube.com/watch?v=hyHdW2LwTug
 ![Screenshot](maqueta1.png)
