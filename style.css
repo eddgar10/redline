@@ -37,6 +37,7 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
     height: 60px;   /*ALTURA POR DEFECTO DE LA NAVEGACION*/
     padding: 20px 0 ;               /*ESPACIO DE RELLENO ARRIBA Y ABAJO 20PX A LOS LADOS 0*/
     
+    
 }
 .nav-brand{
     width: 300px;
@@ -45,6 +46,7 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
 /*NAVEGACION IZQUIERDA*/
 .nav-main ul{   /*ESTILO PARA LAS ETIQUETTAS ul QUE SE ENCUENTRAN DENTRO DEL nav-main UNICAMENTE*/
     display: flex;
+    
 }
 
 .nav-main ul li{ /*ESTILO PARA CADA ELEMENTO li DENTRO DE LA ETIQUETA ul PERTENECIENTE A nav-main*/
@@ -52,7 +54,7 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
 }
 
 .nav-main ul li a:hover{/*ESTILO PARA LAS ETIQUETAS A CONTENIDAS EN nav-main | hover PROPIEDADES PARA CUANDO SE INTERACTUA CON EL ELEMENTO*/
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #ff0000;
 }
 .nav-main ul li a{/*ESPACIO ENTRE LAS ETIQUETAS a Y EL ELEMENTO border-botton*/
     padding: 2px;
@@ -60,18 +62,18 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
 
 .nav-main ul.nav-menu{
     flex:1;
-    margin-left: 20px;
+    margin-left: 20px;    
 }
 
 .menu-btn{
     display: none;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     top: 15px;
     right: 30px;
     z-index: 2;
     font-size: 1.5rem;
-;
+    
 }
 /*SHOWCASE*/
 .showcase{/*ESTILO PARA LA CLASE SHOWCASE Y SUS ELEMENTOS CONTENIDOS*/
@@ -88,7 +90,7 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
     margin-bottom: 20px;                        /*MARGEN ENTRE LOS ELEMENTOS INFERIORES, EN ESTE CASO LA CUADRICULA newcards  */
 }
 
-.btn{/*ESTILO PARA LA CLASE BTN HACIENDO REFERENCIA A LOS BOTONES*/
+.btn{/*ESTILO PARA LA CLASE BTN HACIENDO REFERENCIA A LOS BOTONES DEL MENU*/
     cursor: pointer;            /*AL COLOCARSE EL CURSOR SOBRE EL BOTON CAMBIA EL PUNTERO*/
     display: inline-block;      
     font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
@@ -101,6 +103,7 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
 }
 .btn:hover{
     opacity: 1;
+    color: #ff0000;
 }
 
 .showcase h2,
@@ -136,6 +139,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
 
 .news-cards a:hover{
     text-decoration: underline;
+    color: #ff0000;
 }
 
 /*CARDS BANNER ONE PARA EL BANER CONSECUENTE A LAS 4 IMAGENES*/
@@ -219,7 +223,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
 } 
 .footer-container a:hover{
     text-decoration: underline;
-    color: #ffffff;
+    color: #ff0000;
 }
 
 .footer{
@@ -230,11 +234,14 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
     padding-bottom: 20px;
 }
 
-@media(max-width:900px){
+/*LOS CAMBIOS SE APLICAN SIENDO MENOR A 960*/
+@media(max-width:960px){
 
     .menu-btn{
         display: block;
+        position: fixed; /*EL BOTON SE DESPLAZA CON LA NAVEGACION VERTICAL*/
     } 
+
     .nav-main ul.nav-menu{
         display: block;
         position: absolute;
@@ -246,6 +253,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
         opacity: .9;
         transform: translatex(-400px);
         transition: transform.5s ease-in-out;
+        position: fixed; /*EL BOTON SE DESPLAZA CON LA NAVEGACION VERTICAL*/
     }
 
     .nav-main ul.nav-menu.show{
@@ -271,10 +279,13 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
         width: 100%;
     }
 }
-@media(max-width:500px){
+/*LOS CAMBIOS SE APLICAN SIENDO MENOR A 640 SUMANDO LOS DE 960*/
+@media(max-width:640px){
 
     .menu-btn{
         display: block;
+        position: fixed; /*EL BOTON SE DESPLAZA CON LA NAVEGACION VERTICAL*/
+        
     } 
     .news-cards{
         grid-template-columns: 1fr;
