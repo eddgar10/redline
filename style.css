@@ -70,7 +70,7 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
     position: fixed;
     cursor: pointer;
     top: 15px;
-    right: 30px;
+    right: 38px;
     z-index: 2;
     font-size: 1.5rem;
     
@@ -226,7 +226,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
     align-items: center;
 } 
 .footer-container a:hover{
-    text-decoration: underline;
+     text-decoration: underline;
     color: #ff0000;
 }
 
@@ -244,6 +244,10 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
     .menu-btn{
         display: block;
         position: fixed; /*EL BOTON SE DESPLAZA CON LA NAVEGACION VERTICAL*/
+        top: 15px;
+        right: 45px;
+        z-index: 2;
+        font-size: 1.5rem;    
     } 
 
     .nav-main ul.nav-menu{
@@ -289,7 +293,10 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
     .menu-btn{
         display: block;
         position: fixed; /*EL BOTON SE DESPLAZA CON LA NAVEGACION VERTICAL*/
-        
+        top: 15px;
+        right: 25px;
+        z-index: 2;
+        font-size: 1.5rem;            
     } 
     .news-cards{
         grid-template-columns: 1fr;
