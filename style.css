@@ -75,6 +75,9 @@ ul{/*ESTILO DE LA LISTA QUE COMPONE AL MENU*/
     font-size: 1.5rem;
     
 }
+.menu-btn:hover{
+    color: #ff0000;
+}
 /*SHOWCASE*/
 .showcase{/*ESTILO PARA LA CLASE SHOWCASE Y SUS ELEMENTOS CONTENIDOS*/
     width: 100%;                            /*USA EL ANCHO DISPONIBLE PARA ESTE CASO EL 90% DEL CONTENEDOR DEFINIDO PREVIAMENTE EN LA CLASE container*/
@@ -197,7 +200,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
 }
 
 .links a i{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 /*FOOTER LINKS*/
@@ -220,6 +223,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
 }
 .footer-container ul li{
     line-height: 2;
+    align-items: center;
 } 
 .footer-container a:hover{
     text-decoration: underline;
@@ -247,9 +251,9 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
         position: absolute;
         top: 0;
         left: 0;
-        background: #2f3640;
-        height: 100%;
-        padding:30px;
+        background: #000000; /*#2f3640*/
+        height: 50%;
+        padding:10px;
         opacity: .9;
         transform: translatex(-400px);
         transition: transform.5s ease-in-out;
@@ -257,7 +261,7 @@ font-weight: bold;          /*ESTILO BOLD PARA LA FUENTE*/
     }
 
     .nav-main ul.nav-menu.show{
-        transform: translatex(-20px);
+        transform: translatex(-45px);
     }
 
     .nav-main ul.nav-menu li{
